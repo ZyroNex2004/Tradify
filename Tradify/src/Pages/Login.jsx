@@ -15,7 +15,7 @@ export default function Login() {
             <input type="password" placeholder="Password" className="w-full border p-2 rounded" />
 
             <button
-              onClick={() => navigate("/dashboard")}
+              onClick={() => navigate("/")}
               className="w-full bg-blue-600 text-white py-2 rounded"
             >
               Login
