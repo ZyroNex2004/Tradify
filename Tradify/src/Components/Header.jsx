@@ -1,27 +1,39 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import MegaMenu from "./MegaMenu";
 
 export default function Header() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <header className="w-full bg-white border-b">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <header className="relative bg-white border-b">
+      <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
 
-        {/* Left: Logo + Name */}
-        <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center text-white font-bold">
-            T
+        {/* Logo */}
+        <div className="text-xl font-bold text-blue-600">Tradify</div>
+
+        {/* Nav */}
+        <nav className="flex gap-6 items-center text-gray-700">
+
+          <a href="#">Signup</a>
+          <a href="#">About</a>
+
+          {/* Products with Mega Menu */}
+          <div
+            className="relative"
+            onMouseEnter={() => setOpen(true)}
+            onMouseLeave={() => setOpen(false)}
+          >
+            <button className="font-medium hover:text-blue-600">
+              Products
+            </button>
+
+            {open && <MegaMenu />}
           </div>
-          <span className="text-xl font-bold text-gray-800">Tradify</span>
-        </div>
 
-        {/* Right: Menu */}
-        <nav className="hidden md:flex items-center space-x-6 text-gray-600 font-medium">
-          <Link to="/signup" className="hover:text-blue-600 transition">Signup</Link>
-          <Link to="/about" className="hover:text-blue-600 transition">About</Link>
-          <Link to="/product" className="hover:text-blue-600 transition">Product</Link>
-          <Link to="/pricing" className="hover:text-blue-600 transition">Pricing</Link>
-          <Link to="/support" className="hover:text-blue-600 transition">Support</Link>
+          <a href="#">Pricing</a>
+          <a href="#">Support</a>
+
         </nav>
-
       </div>
     </header>
   );
