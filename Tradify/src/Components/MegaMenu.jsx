@@ -1,6 +1,6 @@
 export default function MegaMenu() {
   return (
-    <div className="absolute left-1/2 -translate-x-1/2 top-14 w-[900px] bg-white shadow-2xl rounded-xl p-8 grid grid-cols-4 gap-8 z-50 border">
+    <div className="absolute left-0 -translate-x-1/2 top-14 w-[900px] bg-white shadow-2xl rounded-xl p-8 grid grid-cols-4 gap-8 z-50 border">
 
       {/* Products */}
       <div>
