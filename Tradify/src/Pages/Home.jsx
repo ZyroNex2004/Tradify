@@ -1,5 +1,6 @@
 import PublicLayout from "../layouts/PublicLayout";
 import landingImg from "../assets/landing.svg";
+import TrustSection from "../Components/TrustSection";
 
 export default function Home() {
   return (
@@ -34,6 +35,9 @@ export default function Home() {
           </button>
 
         </section>
+
+        {/* Trust Section (NEW - below signup) */}
+        <TrustSection />
 
       </div>
     </PublicLayout>

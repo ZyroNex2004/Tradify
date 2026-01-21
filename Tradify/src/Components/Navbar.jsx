@@ -7,11 +7,9 @@ export default function Navbar() {
   return (
     <div className="relative h-14 bg-white border-b flex items-center justify-between px-4">
 
-      {/* Left Section */}
       <div className="flex items-center space-x-6">
         <span className="font-semibold text-gray-800">Dashboard</span>
 
-        {/* Products Menu */}
         <div
           className="relative"
           onMouseEnter={() => setOpen(true)}
@@ -25,10 +23,8 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Right Section */}
       <div className="flex items-center space-x-3">
         <span className="text-sm text-gray-600">Balance: ₹1,00,000</span>
-
         <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-semibold">
           R
         </div>
