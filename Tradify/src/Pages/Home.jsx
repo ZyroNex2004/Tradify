@@ -1,6 +1,7 @@
 import PublicLayout from "../layouts/PublicLayout";
 import landingImg from "../assets/landing.svg";
 import TrustSection from "../Components/TrustSection";
+import EducationSection from "../Components/EducationSection"; // ✅ NEW
 
 export default function Home() {
   return (
@@ -36,8 +37,11 @@ export default function Home() {
 
         </section>
 
-        {/* Trust Section (NEW - below signup) */}
+        {/* Trust Section */}
         <TrustSection />
+
+        {/* Education Section (NEW – image right, text left) */}
+        <EducationSection />
 
       </div>
     </PublicLayout>
