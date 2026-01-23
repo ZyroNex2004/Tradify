@@ -1,63 +1,77 @@
 import ecosystemImg from "../assets/ecosystem.png";
+import pressLogos from "../assets/press-logos.png"; // add this image in assets
 
 export default function TrustSection() {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-16 items-center">
+    <section className="max-w-7xl mx-auto px-6 py-20">
 
-      {/* LEFT CONTENT */}
-      <div>
-        <h2 className="text-3xl font-semibold mb-8">Trust with confidence</h2>
+      {/* Top content */}
+      <div className="grid md:grid-cols-2 gap-12 items-center">
 
-        <div className="space-y-7 text-gray-600">
+        {/* LEFT CONTENT */}
+        <div>
+          <h2 className="text-3xl font-semibold mb-6">Trust with confidence</h2>
 
-          <div>
-            <h3 className="font-semibold text-black mb-1">Customer-first always</h3>
-            <p>
-              That's why millions of customers trust Tradify with their investments,
-              making us one of India's fastest growing platforms.
-            </p>
+          <div className="space-y-6 text-gray-600">
+
+            <div>
+              <h3 className="font-semibold text-black">Customer-first always</h3>
+              <p>
+                That's why millions of customers trust Tradify with their investments,
+                making us one of India's fastest growing platforms.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-black">No spam or gimmicks</h3>
+              <p>
+                No gimmicks, spam, or annoying notifications. High quality apps that
+                you use at your pace.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-black">The Tradify universe</h3>
+              <p>
+                A complete ecosystem of investing, trading, analytics and portfolio tracking tools.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-black">Do better with money</h3>
+              <p>
+                Smart insights, portfolio health checks and long-term focused tools.
+              </p>
+            </div>
+
           </div>
+        </div>
 
-          <div>
-            <h3 className="font-semibold text-black mb-1">No spam or gimmicks</h3>
-            <p>
-              No gimmicks, spam, or annoying notifications. High quality apps that
-              you use at your pace.
-            </p>
-          </div>
+        {/* RIGHT GRAPHIC + LINKS */}
+        <div className="flex flex-col items-center">
 
-          <div>
-            <h3 className="font-semibold text-black mb-1">The Tradify universe</h3>
-            <p>
-              A complete ecosystem of investing, trading, analytics and portfolio tracking tools.
-            </p>
-          </div>
+          <img
+            src={ecosystemImg}
+            alt="Tradify ecosystem"
+            className="max-w-md mb-6"
+          />
 
-          <div>
-            <h3 className="font-semibold text-black mb-1">Do better with money</h3>
-            <p>
-              Smart insights, portfolio health checks and long-term focused tools.
-            </p>
-          </div>
-
-          <div className="flex gap-10 pt-8 text-blue-600 font-medium">
-            <a href="#" className="hover:underline">
-              Explore our products →
-            </a>
-            <a href="#" className="hover:underline">
-              Try demo →
-            </a>
+          {/* Links BELOW image */}
+          <div className="flex gap-8 text-blue-600 font-medium">
+            <a href="#" className="hover:underline">Explore our products →</a>
+            <a href="#" className="hover:underline">Try demo →</a>
           </div>
 
         </div>
+
       </div>
 
-      {/* RIGHT GRAPHIC */}
-      <div className="flex justify-center">
+      {/* PRESS LOGOS SECTION (bottom) */}
+      <div className="mt-16 flex justify-center">
         <img
-          src={ecosystemImg}
-          alt="Tradify ecosystem"
-          className="w-full max-w-lg"
+          src={pressLogos}
+          alt="Press logos"
+          className="max-w-4xl opacity-70"
         />
       </div>
 
