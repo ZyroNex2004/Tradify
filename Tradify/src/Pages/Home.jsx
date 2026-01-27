@@ -8,7 +8,7 @@ export default function Home() {
     <PublicLayout>
       <div className="bg-white">
 
-        {/* Hero Section */}
+        {/*  Section */}
         <section className="max-w-6xl mx-auto px-6 py-16 text-center">
           <div className="flex justify-center mb-12">
             <img src={landingImg} alt="Trading platform" className="w-full max-w-4xl" />
@@ -17,7 +17,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl font-semibold mb-4 text-gray-900">
             Invest in everything
           </h1>
-
+          
           <p className="text-gray-600 text-lg mb-8">
             Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.
           </p>
