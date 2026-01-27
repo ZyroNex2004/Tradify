@@ -8,7 +8,7 @@ export default function Home() {
     <PublicLayout>
       <div className="bg-white">
 
-        {/*  Section */}
+        {/* Hero Section */}
         <section className="max-w-6xl mx-auto px-6 py-16 text-center">
           <div className="flex justify-center mb-12">
             <img src={landingImg} alt="Trading platform" className="w-full max-w-4xl" />
