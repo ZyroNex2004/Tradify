@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="w-full bg-white border-b">
+    <header className="w-full bg-white border-b sticky top-0 z-50">
       <div className="max-w-7xl mx-auto h-16 flex items-center justify-between px-6">
 
         {/* Logo */}
@@ -8,24 +8,26 @@ export default function Header() {
           <img
             src="/vite.svg"   // replace with your logo
             alt="logo"
-            className="h-6"
+            className="h-5"
           />
-          <span className="font-semibold text-lg text-gray-800">TRADIFY</span>
+          <span className="font-semibold text-lg text-gray-800 tracking-tight">TRADIFY</span>
         </div>
 
         {/* Nav links */}
-        <nav className="flex items-center space-x-8 text-sm text-gray-600">
-
-          <a href="/signup" className="hover:text-gray-900">Signup</a>
-          <a href="/about" className="hover:text-gray-900">About</a>
-          <a href="/products" className="hover:text-gray-900">Products</a>
-          <a href="/pricing" className="hover:text-gray-900">Pricing</a>
-          <a href="/support" className="hover:text-gray-900">Support</a>
-
+        <div className="flex items-center">
+          <nav className="hidden md:flex items-center space-x-10 text-sm text-[#666] font-medium">
+            <a href="/signup" className="hover:text-blue-600 transition">Signup</a>
+            <a href="/about" className="hover:text-blue-600 transition">About</a>
+            <a href="/products" className="hover:text-blue-600 transition">Products</a>
+            <a href="/pricing" className="hover:text-blue-600 transition">Pricing</a>
+            <a href="/support" className="hover:text-blue-600 transition">Support</a>
+          </nav>
           {/* Mobile menu icon (optional) */}
-          <button className="text-xl">☰</button>
-
-        </nav>
+          <button className="text-xl ml-8 md:ml-10 text-gray-800">
+            <i className="fas fa-bars"></i>
+            <span className="md:hidden">☰</span>
+          </button>
+        </div>
       </div>
     </header>
   );
