@@ -1,3 +1,5 @@
+import Logo from './Logo';
+
 export default function Header() {
   return (
     <header className="w-full bg-white border-b sticky top-0 z-50">
@@ -5,11 +7,7 @@ export default function Header() {
 
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img
-            src="/vite.svg"   // replace with your logo
-            alt="logo"
-            className="h-5"
-          />
+          <Logo className="h-8 w-auto text-blue-600" />
           <span className="font-semibold text-lg text-gray-800 tracking-tight">TRADIFY</span>
         </div>
 

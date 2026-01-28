@@ -1,3 +1,5 @@
+import Logo from './Logo';
+
 export default function Footer() {
     return (
         <footer className="bg-gray-50 border-t border-gray-200 py-16 text-gray-600 text-sm">
@@ -7,7 +9,7 @@ export default function Footer() {
                     {/* Column 1: Logo & Socials */}
                     <div className="space-y-4">
                         <div className="flex items-center gap-2 mb-4">
-                            <img src="/vite.svg" alt="Tradify Logo" className="h-5" />
+                            <Logo className="h-5 w-auto" />
                             <span className="font-semibold text-lg text-gray-900">TRADIFY</span>
                         </div>
                         <p className="text-sm">
