@@ -1,4 +1,5 @@
 import Logo from './Logo';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -14,7 +15,7 @@ export default function Header() {
         {/* Nav links */}
         <div className="flex items-center">
           <nav className="hidden md:flex items-center space-x-10 text-sm text-[#666] font-medium">
-            <a href="/signup" className="hover:text-blue-600 transition">Signup</a>
+            <Link to="/signup" className="hover:text-blue-600 transition">Signup</Link>
             <a href="/about" className="hover:text-blue-600 transition">About</a>
             <a href="/products" className="hover:text-blue-600 transition">Products</a>
             <a href="/pricing" className="hover:text-blue-600 transition">Pricing</a>
