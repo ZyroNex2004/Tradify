@@ -1,5 +1,6 @@
 import Logo from './Logo';
 import { Link } from 'react-router-dom';
+// change the header to be sticky
 
 export default function Header() {
   return (
