@@ -3,12 +3,14 @@ import Login from "./Pages/Login";
 import Portfolio from "./Components/Portfolio";
 import Signup from "./Pages/Signup";
 import Home from "./Pages/Home";
+import About from "./Pages/About";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/portfolio" element={<Portfolio />} />
