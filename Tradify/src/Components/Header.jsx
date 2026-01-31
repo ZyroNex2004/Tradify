@@ -13,7 +13,7 @@ export default function Header() {
           <span className="font-semibold text-lg text-gray-800 tracking-tight">TRADIFY</span>
         </div>
 
-        {/* Nav links */} //nav bar
+        {/* Nav links */} 
         <div className="flex items-center">
           <nav className="hidden md:flex items-center space-x-10 text-sm text-[#666] font-medium">
             <Link to="/signup" className="hover:text-blue-600 transition">Signup</Link>
