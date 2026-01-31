@@ -1,6 +1,6 @@
 import Logo from './Logo';
 import { Link } from 'react-router-dom';
-// change the header to be sticky
+
 
 export default function Header() {
   return (
@@ -13,7 +13,7 @@ export default function Header() {
           <span className="font-semibold text-lg text-gray-800 tracking-tight">TRADIFY</span>
         </div>
 
-        {/* Nav links */}
+        {/* Nav links */} //nav bar
         <div className="flex items-center">
           <nav className="hidden md:flex items-center space-x-10 text-sm text-[#666] font-medium">
             <Link to="/signup" className="hover:text-blue-600 transition">Signup</Link>
