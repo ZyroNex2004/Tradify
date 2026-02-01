@@ -4,6 +4,7 @@ import Portfolio from "./Components/Portfolio";
 import Signup from "./Pages/Signup";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
+import Pricing from "./Pages/Pricing";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/portfolio" element={<Portfolio />} />

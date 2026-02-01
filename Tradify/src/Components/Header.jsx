@@ -13,13 +13,13 @@ export default function Header() {
           <span className="font-semibold text-lg text-gray-800 tracking-tight">TRADIFY</span>
         </div>
 
-        {/* Nav links */} 
+        {/* Nav links */}
         <div className="flex items-center">
           <nav className="hidden md:flex items-center space-x-10 text-sm text-[#666] font-medium">
             <Link to="/signup" className="hover:text-blue-600 transition">Signup</Link>
             <Link to="/about" className="hover:text-blue-600 transition">About</Link>
             <a href="/products" className="hover:text-blue-600 transition">Products</a>
-            <a href="/pricing" className="hover:text-blue-600 transition">Pricing</a>
+            <Link to="/pricing" className="hover:text-blue-600 transition">Pricing</Link>
             <a href="/support" className="hover:text-blue-600 transition">Support</a>
           </nav>
           {/* Mobile menu icon (optional) */}
