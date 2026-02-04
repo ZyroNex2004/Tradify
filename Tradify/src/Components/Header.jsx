@@ -20,7 +20,7 @@ export default function Header() {
             <Link to="/about" className="hover:text-blue-600 transition">About</Link>
             <Link to="/products" className="hover:text-blue-600 transition">Products</Link>
             <Link to="/pricing" className="hover:text-blue-600 transition">Pricing</Link>
-            <a href="/support" className="hover:text-blue-600 transition">Support</a>
+            <Link to="/support" className="hover:text-blue-600 transition">Support</Link>
           </nav>
           {/* Mobile menu icon (optional) */}
           <button className="text-xl ml-8 md:ml-10 text-gray-800">

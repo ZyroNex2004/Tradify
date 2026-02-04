@@ -6,9 +6,8 @@ export default function Products() {
     return (
         <PublicLayout>
             <div className="bg-white">
-                {/* Hero Section */}
                 <div className="max-w-7xl mx-auto px-6 py-24 text-center">
-                    <h1 className="text-5xl font-semibold text-gray-800 mb-4">Technology</h1>
+                    <h1 className="text-5xl font-semibold text-gray-800 mb-4">Zerodha Products</h1>
                     <h3 className="text-xl text-gray-500 mb-8">Sleek, modern, and intuitive trading platforms</h3>
                     <p className="text-gray-600">
                         Check out our <a href="#" className="text-blue-600 hover:text-blue-700">investment offerings <i className="fas fa-arrow-right text-xs"></i></a>

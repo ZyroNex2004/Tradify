@@ -5,6 +5,7 @@ import Signup from "./Pages/Signup";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Pricing from "./Pages/Pricing";
+import Support from "./Pages/Support";
 import Products from "./Pages/Products";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/support" element={<Support />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/portfolio" element={<Portfolio />} />
