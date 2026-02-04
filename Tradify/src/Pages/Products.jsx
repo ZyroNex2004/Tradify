@@ -1,5 +1,8 @@
 import React from 'react';
 import PublicLayout from '../layouts/PublicLayout';
+import productsKite from "../assets/products-kite.png";
+
+
 import { Link } from 'react-router-dom';
 
 export default function Products() {
@@ -19,9 +22,11 @@ export default function Products() {
                     <div className="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center justify-between gap-12">
                         <div className="md:w-3/5">
                             {/* Placeholder for Kite Image */}
-                            <div className="bg-blue-50 w-full aspect-[16/10] rounded-md flex items-center justify-center border border-blue-100">
-                                <span className="text-blue-200 text-6xl font-bold">Kite</span>
-                            </div>
+                           <img
+                                src={productsKite}
+                                       alt="Kite"
+                                className="w-full max-w-2xl mx-auto"
+                            />
                         </div>
                         <div className="md:w-2/5 md:pl-10">
                             <h2 className="text-3xl font-semibold text-gray-800 mb-4">Kite</h2>
