@@ -4,16 +4,22 @@ import pricingEqImg from "../assets/pricing-eq.svg";
 import otherTradesImg from "../assets/other-trades.svg";
 import OpenAccount from "../Components/OpenAccount";
 
+import { useLocation } from "react-router-dom";
+
 export default function Pricing() {
-    const [activeTab, setActiveTab] = useState("equity");
+    const [activeTab, setActiveTab] = useState("equities");
+    const location = useLocation();
 
     // Handle hash on mount and change
     React.useEffect(() => {
-        const hash = window.location.hash.replace('#tab-', '');
-        if (["equity", "currency", "commodity"].includes(hash)) {
+        const hash = location.hash.replace('#tab-', '');
+        if (["equities", "currency", "commodity"].includes(hash)) {
             setActiveTab(hash);
+        } else {
+            // Default to equities if no hash or invalid hash (optional, but good for /pricing -> equities)
+            setActiveTab("equities");
         }
-    }, []);
+    }, [location]);
 
     const handleTabChange = (tab) => {
         setActiveTab(tab);
@@ -21,7 +27,7 @@ export default function Pricing() {
     };
 
     const charges = {
-        equity: [
+        equities: [
             {
                 category: "Brokerage",
                 delivery: "Zero Brokerage",
@@ -150,7 +156,7 @@ export default function Pricing() {
                 {/* Tabs and Tables Section */}
                 <div className="max-w-7xl mx-auto px-6 py-10">
                     <div className="flex space-x-12 border-b mb-8 text-lg text-gray-500 relative">
-                        {["equity", "currency", "commodity"].map((tab) => (
+                        {["equities", "currency", "commodity"].map((tab) => (
                             <button
                                 key={tab}
                                 onClick={() => handleTabChange(tab)}
@@ -169,7 +175,7 @@ export default function Pricing() {
                         <table className="w-full text-left text-sm text-gray-600 border border-gray-200">
                             <thead className="bg-gray-50">
                                 <tr>
-                                    {activeTab === 'equity' ? (
+                                    {activeTab === 'equities' ? (
                                         <>
                                             <th className="p-4 border font-semibold">Category</th>
                                             <th className="p-4 border font-semibold">Equity delivery</th>
