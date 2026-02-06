@@ -5,7 +5,7 @@ import productsConsole from "../assets/products-console.png";
 import productscoin from "../assets/products-coin.png";
 import landing from "../assets/landingKite.svg";
 
-
+// add the new section
 
 import { Link } from 'react-router-dom';
 
