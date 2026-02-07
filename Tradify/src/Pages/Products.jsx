@@ -5,9 +5,13 @@ import productsConsole from "../assets/products-console.png";
 import productscoin from "../assets/products-coin.png";
 import landing from "../assets/landingKite.svg";
 import varsity from "../assets/varsity-productsMa.svg";
+import zerodhafund from "../assets/zerodhafundhouse.png";
+import sensibull from "../assets/sensibulllogo.svg";
+import tijori from "../assets/tijori.svg";
+import streaklog from "../assets/streaklogo.png";
+import smallcase from "../assets/smallcaselogo.png";
+import ditto from "../assets/dittologo.png";
 
-
-// add the new section
 
 import { Link } from 'react-router-dom';
 
@@ -189,27 +193,51 @@ export default function Products() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center">
                         <Link to="#" className="group">
-                            <div className="h-16 w-32 bg-gray-100 mx-auto mb-4 flex items-center justify-center rounded text-gray-400 font-bold">Fund House</div>
+                            <img
+                                src={zerodhafund}
+                                       alt="zerodhafund"
+                                className="w-full max-w-2xl mx-auto"
+                            />
                             <p className="text-xs text-gray-500 max-w-[200px] mx-auto">Our asset management venture that is creating simple and transparent index funds to help you save for your goals.</p>
                         </Link>
                         <Link to="#" className="group">
-                            <div className="h-16 w-32 bg-gray-100 mx-auto mb-4 flex items-center justify-center rounded text-gray-400 font-bold">Streak</div>
+                             <img
+                                src={sensibull}
+                                     alt="sensibull"
+                                className="w-full max-w-2xl mx-auto"
+                            />
                             <p className="text-xs text-gray-500 max-w-[200px] mx-auto">Systematic trading platform that allows you to create and backtest strategies without coding.</p>
                         </Link>
                         <Link to="#" className="group">
-                            <div className="h-16 w-32 bg-gray-100 mx-auto mb-4 flex items-center justify-center rounded text-gray-400 font-bold">Sensibull</div>
+                            <img
+                                src={tijori}
+                                       alt="tijori"
+                                className="w-full max-w-2xl mx-auto"
+                            />
                             <p className="text-xs text-gray-500 max-w-[200px] mx-auto">Options trading platform that lets you create strategies, analyze positions, and examine data points like open interest, FII/DII, and more.</p>
                         </Link>
                         <Link to="#" className="group">
-                            <div className="h-16 w-32 bg-gray-100 mx-auto mb-4 flex items-center justify-center rounded text-gray-400 font-bold">Smallcase</div>
+                            <img
+                                src={streaklog}
+                                       alt="streaklog"
+                                className="w-full max-w-2xl mx-auto"
+                            />
                             <p className="text-xs text-gray-500 max-w-[200px] mx-auto">Thematic investing platform that helps you invest in diversified baskets of stocks on ETFs.</p>
                         </Link>
                         <Link to="#" className="group">
-                            <div className="h-16 w-32 bg-gray-100 mx-auto mb-4 flex items-center justify-center rounded text-gray-400 font-bold">Tijori</div>
+                            <img
+                                src={smallcase}
+                                       alt="smallcase"
+                                className="w-full max-w-2xl mx-auto"
+                            />
                             <p className="text-xs text-gray-500 max-w-[200px] mx-auto">Investment research platform that offers detailed insights on stocks, sectors, supply chains, and more.</p>
                         </Link>
                         <Link to="#" className="group">
-                            <div className="h-16 w-32 bg-gray-100 mx-auto mb-4 flex items-center justify-center rounded text-gray-400 font-bold">Ditto</div>
+                             <img
+                                src={ditto}
+                                       alt="ditto"
+                                className="w-full max-w-2xl mx-auto"
+                            />
                             <p className="text-xs text-gray-500 max-w-[200px] mx-auto">Personalized advice on life and health insurance. No spam and no mis-selling.</p>
                         </Link>
                     </div>
