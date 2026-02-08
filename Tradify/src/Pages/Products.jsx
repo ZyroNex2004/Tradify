@@ -35,7 +35,7 @@ export default function Products() {
                            <img
                                 src={productsKite}
                                        alt="Kite"
-                                className="w-full max-w-2xl mx-auto"
+                                className="w-full max-w-xl mx-auto"
                             />
                         </div>
                         <div className="md:w-2/5 md:pl-10">
@@ -73,7 +73,7 @@ export default function Products() {
                             <img
                                 src={productsConsole}
                                 alt="Console"
-                                className="w-full max-w-2xl mx-auto"
+                                className="w-full max-w-xl mx-auto"
                             />
 
                         </div>
@@ -95,7 +95,7 @@ export default function Products() {
                            <img
                                 src={productscoin}
                                 alt="Coin"
-                                className="w-full max-w-2xl mx-auto"
+                                className="w-full max-w-xl mx-auto"
                             />
                         </div>
                         <div className="md:w-2/5 md:pl-10">
@@ -131,9 +131,9 @@ export default function Products() {
                             {/* Placeholder for API Image */}
                            <img
                          src={landing}
-  alt="API"
-  className="w-full max-w-2xl mx-auto"
-/>
+                            alt="API"
+                            className="w-full max-w-lg mx-auto"
+                            />
 
                         </div>
                         <div className="md:w-2/5 md:pr-10">
@@ -154,7 +154,7 @@ export default function Products() {
                            <img
                             src={varsity}
                             alt="Varsity"
-                            className="w-full max-w-2xl mx-auto"
+                            className="w-full max-w-sm mx-auto"
                             />  
                         </div>
                         <div className="md:w-2/5 md:pl-10">
