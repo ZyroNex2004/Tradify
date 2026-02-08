@@ -32,9 +32,9 @@ export default function Products() {
                     <div className="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center justify-between gap-12">
                         <div className="md:w-3/5">
                             {/* Placeholder for Kite Image */}
-                           <img
+                            <img
                                 src={productsKite}
-                                       alt="Kite"
+                                alt="Kite"
                                 className="w-full max-w-xl mx-auto"
                             />
                         </div>
@@ -92,7 +92,7 @@ export default function Products() {
                     <div className="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center justify-between gap-12">
                         <div className="md:w-3/5">
                             {/* Placeholder for Coin Image */}
-                           <img
+                            <img
                                 src={productscoin}
                                 alt="Coin"
                                 className="w-full max-w-xl mx-auto"
@@ -129,10 +129,10 @@ export default function Products() {
                     <div className="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
                         <div className="md:w-3/5">
                             {/* Placeholder for API Image */}
-                           <img
-                         src={landing}
-                            alt="API"
-                            className="w-full max-w-lg mx-auto"
+                            <img
+                                src={landing}
+                                alt="API"
+                                className="w-full max-w-lg mx-auto"
                             />
 
                         </div>
@@ -151,11 +151,11 @@ export default function Products() {
                     <div className="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center justify-between gap-12">
                         <div className="md:w-3/5">
                             {/* Placeholder for Varsity Image */}
-                           <img
-                            src={varsity}
-                            alt="Varsity"
-                            className="w-full max-w-sm mx-auto"
-                            />  
+                            <img
+                                src={varsity}
+                                alt="Varsity"
+                                className="w-full max-w-sm mx-auto"
+                            />
                         </div>
                         <div className="md:w-2/5 md:pl-10">
                             <h2 className="text-3xl font-semibold text-gray-800 mb-4">Varsity mobile</h2>
@@ -192,53 +192,53 @@ export default function Products() {
                     <p className="text-gray-600 mb-12">Extend your trading and investment experience even further with our partner platforms</p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center">
-                        <Link to="#" className="group">
+                        <Link to="#" className="group block">
                             <img
                                 src={zerodhafund}
-                                       alt="zerodhafund"
-                                className="w-full max-w-2xl mx-auto"
+                                alt="zerodhafund"
+                                className="h-10 w-auto mx-auto object-contain transition-all duration-300 group-hover:opacity-60"
                             />
-                            <p className="text-xs text-gray-500 max-w-[200px] mx-auto">Our asset management venture that is creating simple and transparent index funds to help you save for your goals.</p>
+                            <p className="text-xs text-gray-500 max-w-[200px] mx-auto mt-4">Our asset management venture that is creating simple and transparent index funds to help you save for your goals.</p>
                         </Link>
-                        <Link to="#" className="group">
-                             <img
+                        <Link to="#" className="group block">
+                            <img
                                 src={sensibull}
-                                     alt="sensibull"
-                                className="w-full max-w-2xl mx-auto"
+                                alt="sensibull"
+                                className="h-10 w-auto mx-auto object-contain transition-all duration-300 group-hover:opacity-60"
                             />
-                            <p className="text-xs text-gray-500 max-w-[200px] mx-auto">Systematic trading platform that allows you to create and backtest strategies without coding.</p>
+                            <p className="text-xs text-gray-500 max-w-[200px] mx-auto mt-4">Systematic trading platform that allows you to create and backtest strategies without coding.</p>
                         </Link>
-                        <Link to="#" className="group">
+                        <Link to="#" className="group block">
                             <img
                                 src={tijori}
-                                       alt="tijori"
-                                className="w-full max-w-2xl mx-auto"
+                                alt="tijori"
+                                className="h-10 w-auto mx-auto object-contain transition-all duration-300 group-hover:opacity-60"
                             />
-                            <p className="text-xs text-gray-500 max-w-[200px] mx-auto">Options trading platform that lets you create strategies, analyze positions, and examine data points like open interest, FII/DII, and more.</p>
+                            <p className="text-xs text-gray-500 max-w-[200px] mx-auto mt-4">Options trading platform that lets you create strategies, analyze positions, and examine data points like open interest, FII/DII, and more.</p>
                         </Link>
-                        <Link to="#" className="group">
+                        <Link to="#" className="group block">
                             <img
                                 src={streaklog}
-                                       alt="streaklog"
-                                className="w-full max-w-2xl mx-auto"
+                                alt="streaklog"
+                                className="h-10 w-auto mx-auto object-contain transition-all duration-300 group-hover:opacity-60"
                             />
-                            <p className="text-xs text-gray-500 max-w-[200px] mx-auto">Thematic investing platform that helps you invest in diversified baskets of stocks on ETFs.</p>
+                            <p className="text-xs text-gray-500 max-w-[200px] mx-auto mt-4">Thematic investing platform that helps you invest in diversified baskets of stocks on ETFs.</p>
                         </Link>
-                        <Link to="#" className="group">
+                        <Link to="#" className="group block">
                             <img
                                 src={smallcase}
-                                       alt="smallcase"
-                                className="w-full max-w-2xl mx-auto"
+                                alt="smallcase"
+                                className="h-10 w-auto mx-auto object-contain transition-all duration-300 group-hover:opacity-60"
                             />
-                            <p className="text-xs text-gray-500 max-w-[200px] mx-auto">Investment research platform that offers detailed insights on stocks, sectors, supply chains, and more.</p>
+                            <p className="text-xs text-gray-500 max-w-[200px] mx-auto mt-4">Investment research platform that offers detailed insights on stocks, sectors, supply chains, and more.</p>
                         </Link>
-                        <Link to="#" className="group">
-                             <img
+                        <Link to="#" className="group block">
+                            <img
                                 src={ditto}
-                                       alt="ditto"
-                                className="w-full max-w-2xl mx-auto"
+                                alt="ditto"
+                                className="h-10 w-auto mx-auto object-contain transition-all duration-300 group-hover:opacity-60"
                             />
-                            <p className="text-xs text-gray-500 max-w-[200px] mx-auto">Personalized advice on life and health insurance. No spam and no mis-selling.</p>
+                            <p className="text-xs text-gray-500 max-w-[200px] mx-auto mt-4">Personalized advice on life and health insurance. No spam and no mis-selling.</p>
                         </Link>
                     </div>
 
