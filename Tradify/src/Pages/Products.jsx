@@ -242,8 +242,8 @@ export default function Products() {
                         </Link>
                     </div>
 
-                    <button className="bg-blue-600 text-white font-semibold px-8 py-3 rounded mt-16 hover:bg-blue-700 transition">
-                        Sign up now
+                    <button className="bg-blue-600 text-white font-semibold px-10 py-3 rounded mt-16 hover:bg-blue-700 transition text-lg">
+                        Sign up for free
                     </button>
                 </div>
             </div>
