@@ -1,12 +1,8 @@
-import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 
 export default function MainLayout({ children }) {
   return (
     <div className="flex h-screen overflow-hidden">
-
-      {/* Sidebar */}
-      <Sidebar />
 
       {/* Main Area */}
       <div className="flex-1 flex flex-col">
